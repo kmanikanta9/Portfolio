@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import luxuryhotel from "../assets/Luxuryhotel_image.png";
-import styleden from "../assets/Styleden_image.png";
+import styleden from "../assets/Styleden_white.png";
 import gardenpro from "../assets/Gardenpro_image.png";
 const Projects = () => {
   const projects = [
@@ -13,20 +13,10 @@ const Projects = () => {
       tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       liveLink: "https://luxuryhotel-eosin.vercel.app/",
       codeLink: "https://github.com/kmanikanta9/Hotel_Booking",
-      accentColor: "violet",
+      accentColor: "black",
       image: luxuryhotel,
     },
-    {
-      id: 2,
-      title: "StyleDen – E-Commerce Website",
-      description:
-        "An e-commerce platform with role-based authentication. Customers can browse, add to cart, and checkout. Vendors manage products and inventory using Firebase and Firestore.",
-      tech: ["HTML", "CSS", "JavaScript", "Firebase", "Firestore"],
-      liveLink: "https://styleden.netlify.app/",
-      codeLink: "https://github.com/kmanikanta9/Ecommerce",
-      accentColor: "blue",
-      image: styleden,
-    },
+    
     {
       id: 3,
       title: "GardenPro – Gardening Services Platform",
@@ -38,6 +28,17 @@ const Projects = () => {
       accentColor: "emerald",
       image: gardenpro,
     },
+    {
+      id: 2,
+      title: "StyleDen – E-Commerce Website",
+      description:
+        "An e-commerce platform with role-based authentication. Customers can browse, add to cart, and checkout. Vendors manage products and inventory using Firebase and Firestore.",
+      tech: ["HTML", "CSS", "JavaScript", "Firebase", "Firestore"],
+      liveLink: "https://styleden.netlify.app/",
+      codeLink: "https://github.com/kmanikanta9/Ecommerce",
+      accentColor: "zinc",
+      image: styleden,
+    }
   ];
 
   const getColorClasses = (color) => {
@@ -57,6 +58,85 @@ const Projects = () => {
         text: "text-violet-600",
         button: "bg-violet-500 hover:bg-violet-600",
       },
+          black: {
+      border: "border-t-black",
+      text: "text-black",
+      button: "bg-black hover:bg-gray-800",
+    },
+    red: {
+  border: "border-t-red-500",
+  text: "text-red-600",
+  button: "bg-red-500 hover:bg-red-600",
+},
+orange: {
+  border: "border-t-orange-500",
+  text: "text-orange-600",
+  button: "bg-orange-500 hover:bg-orange-600",
+},
+
+teal: {
+  border: "border-t-teal-500",
+  text: "text-teal-600",
+  button: "bg-teal-500 hover:bg-teal-600",
+},
+
+gray: {
+  border: "border-t-gray-500",
+  text: "text-gray-700",
+  button: "bg-gray-500 hover:bg-gray-600",
+},
+
+slate: {
+  border: "border-t-slate-500",
+  text: "text-slate-700",
+  button: "bg-slate-500 hover:bg-slate-600",
+},
+
+zinc: {
+  border: "border-t-zinc-500",
+  text: "text-zinc-700",
+  button: "bg-zinc-500 hover:bg-zinc-600",
+},
+
+neutral: {
+  border: "border-t-neutral-500",
+  text: "text-neutral-700",
+  button: "bg-neutral-500 hover:bg-neutral-600",
+},
+
+stone: {
+  border: "border-t-stone-500",
+  text: "text-stone-700",
+  button: "bg-stone-500 hover:bg-stone-600",
+},
+brown: {
+  border: "border-t-amber-900",
+  text: "text-amber-900",
+  button: "bg-amber-800 hover:bg-amber-900",
+},
+
+coffee: {
+  border: "border-t-yellow-900",
+  text: "text-yellow-900",
+  button: "bg-yellow-900 hover:bg-yellow-950",
+},
+
+chocolate: {
+  border: "border-t-orange-900",
+  text: "text-orange-900",
+  button: "bg-orange-900 hover:bg-orange-950",
+},
+
+mocha: {
+  border: "border-t-stone-700",
+  text: "text-stone-800",
+  button: "bg-stone-700 hover:bg-stone-800",
+},
+
+
+
+
+
     };
     return colors[color] || colors.blue;
   };
