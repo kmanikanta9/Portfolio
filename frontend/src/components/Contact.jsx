@@ -23,6 +23,8 @@ const Contact = () => {
 
   // Resume download handler
   const handleResumeClick = () => {
+    const newTab = window.open(resumeUrl, "_blank", "noopener,noreferrer");
+    
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Manikanta_Kondakayala_Resume.pdf";
