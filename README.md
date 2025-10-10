@@ -1,5 +1,5 @@
+# Portfolio
 
-About
 Portfolio is a personal portfolio website showcasing the skills, projects, and journey of a passionate full-stack developer. Designed with a clean and modern UI, it serves as a digital resume and a platform to highlight technical expertise and project experience. The site offers a seamless user experience with smooth navigation and responsive design, making it accessible across various devices.
 
 Tech Stack
