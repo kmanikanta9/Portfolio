@@ -19,13 +19,13 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  const resumeUrl = "/Manikanta-Kondakayala-Resume.pdf";
+  const resumeUrl = "/Manikanta_Kondakayala_Resume.pdf";
 
   // Resume download handler
   const handleResumeClick = () => {
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Manikanta-Kondakayala-Resume.pdf";
+    link.download = "Manikanta_Kondakayala_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

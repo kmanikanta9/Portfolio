@@ -4,14 +4,14 @@ import profileImg from "../assets/profile_photo.jpg";
 import { HiDownload } from "react-icons/hi";
 
 export default function Header() {
-  const resumeUrl = "/Manikanta-Kondakayala-Resume.pdf";
+  const resumeUrl = "/Manikanta_Kondakayala_Resume.pdf";
 
   const handleResumeClick = () => {
     const newTab = window.open(resumeUrl, "_blank", "noopener,noreferrer");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Manikanta-Kondakayala-Resume.pdf";
+    link.download = "Manikanta_Kondakayala_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
