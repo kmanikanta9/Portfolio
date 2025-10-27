@@ -5,6 +5,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ChatBot from './AI_Assist/ChatBot';
 
 export default function App() {
   return (
@@ -33,6 +34,8 @@ export default function App() {
       </section>
 
       <Footer />
+      <ChatBot/>
+      
     </>
   );
 }
